@@ -1,0 +1,407 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local StormHub = Instance.new("ScreenGui")
+local MainDark = Instance.new("Frame")
+local Panel = Instance.new("Frame")
+local X = Instance.new("TextButton")
+local Label = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Yield = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local LightMode = Instance.new("TextButton")
+local Vynixu = Instance.new("TextButton")
+local Eclipse = Instance.new("TextButton")
+local Versione = Instance.new("TextLabel")
+local CredsB = Instance.new("TextButton")
+local Discord = Instance.new("TextLabel")
+local Credits = Instance.new("Frame")
+local Credits_2 = Instance.new("TextLabel")
+local Credits_3 = Instance.new("TextLabel")
+local X_2 = Instance.new("TextButton")
+local MainLight = Instance.new("Frame")
+local Panel_2 = Instance.new("Frame")
+local X_3 = Instance.new("TextButton")
+local Label_2 = Instance.new("TextLabel")
+local Yield_2 = Instance.new("TextButton")
+local OwlHub_2 = Instance.new("TextButton")
+local DarkMode = Instance.new("TextButton")
+local Vynixu_2 = Instance.new("TextButton")
+local Eclipse_2 = Instance.new("TextButton")
+local Version_2 = Instance.new("TextLabel")
+local CredsB_2 = Instance.new("TextButton")
+local Discord_2 = Instance.new("TextLabel")
+
+--Properties:
+
+StormHub.Name = "StormHub"
+StormHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+StormHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainDark.Name = "Main Dark"
+MainDark.Parent = StormHub
+MainDark.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+MainDark.Position = UDim2.new(0, 116, 0, 120)
+MainDark.Size = UDim2.new(0, 415, 0, 267)
+MainDark.Draggable = true
+
+Panel.Name = "Panel"
+Panel.Parent = MainDark
+Panel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Panel.Size = UDim2.new(0, 415, 0, 35)
+
+X.Name = "X"
+X.Parent = Panel
+X.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+X.Position = UDim2.new(0.92303288, 0, 0.194121882, 0)
+X.Size = UDim2.new(0, 20, 0, 20)
+X.Font = Enum.Font.SciFi
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(33, 129, 131)
+X.TextSize = 24.000
+X.TextWrapped = true
+X.MouseButton1Down:connect(function()
+	MainDark.Visible = false
+end)
+
+Label.Name = "Label"
+Label.Parent = Panel
+Label.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Label.Size = UDim2.new(0, 105, 0, 35)
+Label.Font = Enum.Font.SciFi
+Label.Text = "Storm⚡ Hub"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextScaled = true
+Label.TextSize = 22.000
+Label.TextWrapped = true
+
+ImageLabel.Parent = Panel
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.253012061, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 35, 0, 35)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=58120500"
+
+Yield.Name = "Yield"
+Yield.Parent = MainDark
+Yield.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Yield.Position = UDim2.new(0.0242377594, 0, 0.609210074, 0)
+Yield.Size = UDim2.new(0, 129, 0, 36)
+Yield.Font = Enum.Font.SciFi
+Yield.Text = "Infinite Yield"
+Yield.TextColor3 = Color3.fromRGB(207, 52, 21)
+Yield.TextSize = 24.000
+Yield.TextWrapped = true
+Yield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+OwlHub.Name = "Owl Hub"
+OwlHub.Parent = MainDark
+OwlHub.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+OwlHub.Position = UDim2.new(0.0242377594, 0, 0.822693229, 0)
+OwlHub.Size = UDim2.new(0, 129, 0, 36)
+OwlHub.Font = Enum.Font.SciFi
+OwlHub.Text = "Owl-Hub"
+OwlHub.TextColor3 = Color3.fromRGB(255, 128, 0)
+OwlHub.TextSize = 24.000
+OwlHub.TextWrapped = true
+OwlHub.MouseButton1Down:connect(function()
+	local old
+	old = hookfunction(game.HttpGetAsync, function(inst, url, state)
+		url = url:gsub('CriShoux', 'SiLeNSwOrD')
+		return old(inst, url, state)
+	end)
+
+	local old2
+	old2 = hookfunction(game.HttpGet, function(inst, url, state)
+		url = url:gsub('CriShoux', 'SiLeNSwOrD')
+		return old2(inst, url, state)
+	end)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
+end)
+
+LightMode.Name = "Light Mode"
+LightMode.Parent = MainDark
+LightMode.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+LightMode.Position = UDim2.new(0.771225691, 0, 0.822693229, 0)
+LightMode.Size = UDim2.new(0, 83, 0, 36)
+LightMode.Font = Enum.Font.SciFi
+LightMode.Text = "Light"
+LightMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+LightMode.TextSize = 24.000
+LightMode.TextWrapped = true
+LightMode.MouseButton1Down:connect(function()
+	MainDark.Visible = false
+	MainLight.Visible = true
+end)
+
+Vynixu.Name = "Vynixu"
+Vynixu.Parent = MainDark
+Vynixu.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Vynixu.Position = UDim2.new(0.0242377594, 0, 0.429434776, 0)
+Vynixu.Size = UDim2.new(0, 129, 0, 36)
+Vynixu.Font = Enum.Font.SciFi
+Vynixu.Text = "Vynixu"
+Vynixu.TextColor3 = Color3.fromRGB(110, 12, 171)
+Vynixu.TextSize = 24.000
+Vynixu.TextWrapped = true
+Vynixu.MouseButton1Click:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+Eclipse.Name = "Eclipse"
+Eclipse.Parent = MainDark
+Eclipse.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Eclipse.Position = UDim2.new(0.0242377594, 0, 0.253404796, 0)
+Eclipse.Size = UDim2.new(0, 129, 0, 36)
+Eclipse.Font = Enum.Font.SciFi
+Eclipse.Text = "Eclipse"
+Eclipse.TextColor3 = Color3.fromRGB(131, 0, 2)
+Eclipse.TextSize = 24.000
+Eclipse.TextWrapped = true
+Eclipse.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+
+Versione.Name = "Version"
+Versione.Parent = MainDark
+Versione.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Versione.Position = UDim2.new(0.0240963846, 0, 0.131086141, 0)
+Versione.Size = UDim2.new(0, 129, 0, 23)
+Versione.Font = Enum.Font.SciFi
+Versione.Text = "Version 1.0"
+Versione.TextColor3 = Color3.fromRGB(0, 0, 0)
+Versione.TextSize = 22.000
+
+CredsB.Name = "CredsB"
+CredsB.Parent = MainDark
+CredsB.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+CredsB.Position = UDim2.new(0.43614459, 0, 0.167262509, 0)
+CredsB.Size = UDim2.new(0, 222, 0, 36)
+CredsB.Font = Enum.Font.SciFi
+CredsB.Text = "Credits"
+CredsB.TextColor3 = Color3.fromRGB(16, 232, 255)
+CredsB.TextSize = 24.000
+CredsB.TextWrapped = true
+CredsB.MouseButton1Click:connect(function()
+	Credits.Visible = true
+end)
+
+Discord.Name = "Discord"
+Discord.Parent = MainDark
+Discord.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Discord.Position = UDim2.new(0.43614459, 0, 0.340823978, 0)
+Discord.Size = UDim2.new(0, 222, 0, 71)
+Discord.Font = Enum.Font.SciFi
+Discord.Text = "Our Discord: MMarkosPro21_YT#5638 and TornadoAlley#8506"
+Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
+Discord.TextSize = 22.000
+Discord.TextWrapped = true
+Discord.TextXAlignment = Enum.TextXAlignment.Left
+Discord.TextYAlignment = Enum.TextYAlignment.Top
+
+Credits.Name = "Credits"
+Credits.Parent = StormHub
+Credits.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 1034, 0, 491)
+Credits.Size = UDim2.new(0, 296, 0, 239)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = Credits
+Credits_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Credits_2.BorderSizePixel = 0
+Credits_2.Position = UDim2.new(-0.00293052197, 0, -0.00751113892, 0)
+Credits_2.Size = UDim2.new(0, 296, 0, 106)
+Credits_2.Font = Enum.Font.SciFi
+Credits_2.Text = "Credits: SECRET_INFO99, CheggyWaterSalad"
+Credits_2.TextColor3 = Color3.fromRGB(0, 158, 206)
+Credits_2.TextSize = 34.000
+Credits_2.TextWrapped = true
+Credits_2.TextYAlignment = Enum.TextYAlignment.Top
+
+Credits_3.Name = "Credits"
+Credits_3.Parent = Credits
+Credits_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Credits_3.BorderSizePixel = 0
+Credits_3.Position = UDim2.new(-0.00293071847, 0, 0.433446437, 0)
+Credits_3.Size = UDim2.new(0, 296, 0, 81)
+Credits_3.Font = Enum.Font.SciFi
+Credits_3.Text = "With help from: 1 F0, frstee"
+Credits_3.TextColor3 = Color3.fromRGB(0, 158, 206)
+Credits_3.TextSize = 34.000
+Credits_3.TextWrapped = true
+Credits_3.TextYAlignment = Enum.TextYAlignment.Top
+
+X_2.Name = "X"
+X_2.Parent = Credits
+X_2.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+X_2.Position = UDim2.new(0.0514111891, 0, 0.772358537, 0)
+X_2.Size = UDim2.new(0, 265, 0, 54)
+X_2.Font = Enum.Font.SciFi
+X_2.Text = "Close Credits"
+X_2.TextColor3 = Color3.fromRGB(186, 0, 0)
+X_2.TextSize = 34.000
+X_2.TextWrapped = true
+X_2.MouseButton1Click:connect(function()
+	Credits.Visible = false
+end)
+
+MainLight.Name = "Main Light"
+MainLight.Parent = StormHub
+MainLight.BackgroundColor3 = Color3.fromRGB(211, 211, 211)
+MainLight.Position = UDim2.new(0, 649, 0, 126)
+MainLight.Size = UDim2.new(0, 415, 0, 267)
+
+Panel_2.Name = "Panel"
+Panel_2.Parent = MainLight
+Panel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Panel_2.Size = UDim2.new(0, 415, 0, 35)
+
+X_3.Name = "X"
+X_3.Parent = Panel_2
+X_3.BackgroundColor3 = Color3.fromRGB(202, 202, 202)
+X_3.Position = UDim2.new(0.92303288, 0, 0.194121882, 0)
+X_3.Size = UDim2.new(0, 20, 0, 20)
+X_3.Font = Enum.Font.SciFi
+X_3.Text = "X"
+X_3.TextColor3 = Color3.fromRGB(33, 129, 131)
+X_3.TextSize = 24.000
+X_3.TextWrapped = true
+X_3.MouseButton1Click:connect(function()
+	MainLight.Visible = false
+end)
+
+Label_2.Name = "Label"
+Label_2.Parent = Panel_2
+Label_2.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+Label_2.Size = UDim2.new(0, 105, 0, 35)
+Label_2.Font = Enum.Font.SciFi
+Label_2.Text = "Storm⚡ Hub"
+Label_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label_2.TextScaled = true
+Label_2.TextSize = 22.000
+Label_2.TextWrapped = true
+
+Yield_2.Name = "Yield"
+Yield_2.Parent = MainLight
+Yield_2.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
+Yield_2.Position = UDim2.new(0.0242377594, 0, 0.609210074, 0)
+Yield_2.Size = UDim2.new(0, 129, 0, 36)
+Yield_2.Font = Enum.Font.SciFi
+Yield_2.Text = "Infinite Yield"
+Yield_2.TextColor3 = Color3.fromRGB(207, 52, 21)
+Yield_2.TextSize = 24.000
+Yield_2.TextWrapped = true
+Yield_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+OwlHub_2.Name = "Owl Hub"
+OwlHub_2.Parent = MainLight
+OwlHub_2.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
+OwlHub_2.Position = UDim2.new(0.0242377594, 0, 0.822693229, 0)
+OwlHub_2.Size = UDim2.new(0, 129, 0, 36)
+OwlHub_2.Font = Enum.Font.SciFi
+OwlHub_2.Text = "Owl-Hub"
+OwlHub_2.TextColor3 = Color3.fromRGB(255, 128, 0)
+OwlHub_2.TextSize = 24.000
+OwlHub_2.TextWrapped = true
+OwlHub_2.MouseButton1Down:connect(function()
+	local old
+	old = hookfunction(game.HttpGetAsync, function(inst, url, state)
+		url = url:gsub('CriShoux', 'SiLeNSwOrD')
+		return old(inst, url, state)
+	end)
+
+	local old2
+	old2 = hookfunction(game.HttpGet, function(inst, url, state)
+		url = url:gsub('CriShoux', 'SiLeNSwOrD')
+		return old2(inst, url, state)
+	end)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
+end)
+
+DarkMode.Name = "Dark Mode"
+DarkMode.Parent = MainLight
+DarkMode.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+DarkMode.Position = UDim2.new(0.771225691, 0, 0.822693229, 0)
+DarkMode.Size = UDim2.new(0, 83, 0, 36)
+DarkMode.Font = Enum.Font.SciFi
+DarkMode.Text = "Dark"
+DarkMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkMode.TextSize = 24.000
+DarkMode.TextWrapped = true
+DarkMode.MouseButton1Down:connect(function()
+	MainDark.Visible = true
+	MainLight.Visible = false
+end)
+
+Vynixu_2.Name = "Vynixu"
+Vynixu_2.Parent = MainLight
+Vynixu_2.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
+Vynixu_2.Position = UDim2.new(0.0242377594, 0, 0.429434776, 0)
+Vynixu_2.Size = UDim2.new(0, 129, 0, 36)
+Vynixu_2.Font = Enum.Font.SciFi
+Vynixu_2.Text = "Vynixu"
+Vynixu_2.TextColor3 = Color3.fromRGB(110, 12, 171)
+Vynixu_2.TextSize = 24.000
+Vynixu_2.TextWrapped = true
+Vynixu_2.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+Eclipse_2.Name = "Eclipse"
+Eclipse_2.Parent = MainLight
+Eclipse_2.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
+Eclipse_2.Position = UDim2.new(0.0242377594, 0, 0.253404796, 0)
+Eclipse_2.Size = UDim2.new(0, 129, 0, 36)
+Eclipse_2.Font = Enum.Font.SciFi
+Eclipse_2.Text = "Eclipse"
+Eclipse_2.TextColor3 = Color3.fromRGB(131, 0, 2)
+Eclipse_2.TextSize = 24.000
+Eclipse_2.TextWrapped = true
+Eclipse_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+
+Version_2.Name = "Version"
+Version_2.Parent = MainLight
+Version_2.BackgroundColor3 = Color3.fromRGB(159, 159, 159)
+Version_2.Position = UDim2.new(0.0240963846, 0, 0.131086141, 0)
+Version_2.Size = UDim2.new(0, 129, 0, 23)
+Version_2.Font = Enum.Font.SciFi
+Version_2.Text = "Version 1.0"
+Version_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version_2.TextSize = 22.000
+
+CredsB_2.Name = "CredsB"
+CredsB_2.Parent = MainLight
+CredsB_2.BackgroundColor3 = Color3.fromRGB(185, 185, 185)
+CredsB_2.Position = UDim2.new(0.43614459, 0, 0.167262509, 0)
+CredsB_2.Size = UDim2.new(0, 222, 0, 36)
+CredsB_2.Font = Enum.Font.SciFi
+CredsB_2.Text = "Credits"
+CredsB_2.TextColor3 = Color3.fromRGB(5, 87, 95)
+CredsB_2.TextSize = 24.000
+CredsB_2.TextWrapped = true
+CredsB_2.MouseButton1Click:connect(function()
+	Credits.Visible = true
+end)
+
+Discord_2.Name = "Discord"
+Discord_2.Parent = MainLight
+Discord_2.BackgroundColor3 = Color3.fromRGB(159, 159, 159)
+Discord_2.Position = UDim2.new(0.43614459, 0, 0.340823978, 0)
+Discord_2.Size = UDim2.new(0, 222, 0, 71)
+Discord_2.Font = Enum.Font.SciFi
+Discord_2.Text = "Our Discord: MMarkosPro21_YT#5638 and TornadoAlley#8506"
+Discord_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Discord_2.TextSize = 22.000
+Discord_2.TextWrapped = true
+Discord_2.TextXAlignment = Enum.TextXAlignment.Left
+Discord_2.TextYAlignment = Enum.TextYAlignment.Top
