@@ -209,6 +209,7 @@ Credits.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
 Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(0, 1034, 0, 491)
 Credits.Size = UDim2.new(0, 296, 0, 239)
+Credits.Visible = false
 
 Credits_2.Name = "Credits"
 Credits_2.Parent = Credits
@@ -255,6 +256,7 @@ MainLight.Parent = StormHub
 MainLight.BackgroundColor3 = Color3.fromRGB(211, 211, 211)
 MainLight.Position = UDim2.new(0, 649, 0, 126)
 MainLight.Size = UDim2.new(0, 415, 0, 267)
+MainLight.Visible = false
 
 Panel_2.Name = "Panel"
 Panel_2.Parent = MainLight
